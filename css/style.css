@@ -1,4 +1,41 @@
+/* general styles */
 @font-face {
     font-family: "Norse Bold";
-    src: url("/home/yokova/repos/Sign-up-form/fonts/Norse-Bold.otf");
+    src: url(../fonts/Norse-Bold.otf);
 }
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+}
+
+/* background-section */
+.background-section{
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    height: 1200px;
+}
+.logo-container{
+    padding: 20px;
+    margin-top: 40%;
+    background-color: rgba(0, 0, 0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-container img {
+    width: 20%;
+}
+.logo-container span {
+    color: white;
+    font-size: 75px;
+    font-family: "Norse Bold";
+    margin-left: 15px;
+}
+
+
+/* form page section  */
+
