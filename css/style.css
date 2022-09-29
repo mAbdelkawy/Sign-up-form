@@ -10,13 +10,15 @@
 
 body{
     display: flex;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* background-section */
 .background-section{
+    width: 40%;
     background-image: url(../images/background.jpg);
     background-size: cover;
-    height: 1200px;
+    /* height: 1200px; */
 }
 .logo-container{
     padding: 20px;
@@ -31,11 +33,90 @@ body{
 }
 .logo-container span {
     color: white;
-    font-size: 75px;
+    font-size: 90px;
     font-family: "Norse Bold";
     margin-left: 15px;
 }
 
 
 /* form page section  */
+.form-page{
+    width: 60%;
+}
+.header{
+    background-color: rgba(128, 128, 128,0.1);
+    padding:200px 50px 50px;
+}
+.header p {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: rgb(0, 0, 0,0.8);
+}
+.form-section{
+    padding: 50px;
+    padding-bottom: 0;
+    box-shadow: 0 5px 15px rgb(128, 128, 128,0.5);
+}
+.form-content{
+    display: flex;
+    gap: 50px;
+    margin-top: 30px;
+}
+.content1 div , .content2 div {
+    margin: 40px 0;
+}
+label{
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    opacity: 0.7;
+}
+input{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid #E5E7EB;
+    font-size: 24px;
+    color: rgb(0, 0, 0,0.7);
 
+}
+input:focus:valid {
+    outline: none;
+    border: 2px solid rgb(0, 128, 0,0.7);
+}
+input:focus:invalid{
+    outline: none;
+    border: 2px solid rgb(255, 0, 0,0.6);
+}
+
+/* the rest section  */
+.rest{
+    padding: 50px;
+    margin-bottom: 50px;
+}
+.rest button{
+    padding: 13px 60px;
+    background-color: #596D48;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 40px;
+    margin-top: 10px;
+
+}
+.rest button:active{
+    opacity: 0.8;
+}
+.rest p{
+    font-size: 20px;
+}
+.rest a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bold;
+}
